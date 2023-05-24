@@ -47,7 +47,7 @@ public:
     int dim_max() const;
     void clear();
     void remove();
-    void heapify_up(/*std::vector<int> items*/);
+    void heapify_up(/*vector<int> int items*/); // TODO VETORES?!?!?!
     void redim_max(int new_capacity);
 };
 
