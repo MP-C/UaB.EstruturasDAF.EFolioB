@@ -80,7 +80,7 @@ int main() {
             }
         }
         else {
-            cout << "O comando introduzido nao e valido\n" <<endl; // Devolve uma mensagem de erro
+            cout << "O comando introduzido nao e valido" <<endl; // Devolve uma mensagem de erro
 
         }
     }
