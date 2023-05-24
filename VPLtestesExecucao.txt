@@ -1,0 +1,1423 @@
+Failed tests
+Test 1: input01
+Test 2: input02
+Test 3: input03
+Test 4: input04
+Test 5: input05
+Test 6: input06
+Test 7: input07
+Test 8: input08
+Test 9: input09
+Test 10: input10
+Test 11: input11
+Test 12: input12
+Test 1: input01
+Incorrect program output
+--- Input ---
+# test 01
+
+insert 7 3  9   6
+print
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 01
+commando: #
+argumento: 7
+commando: insert
+argumento: 3
+commando: insert
+argumento: 9
+commando: insert
+argumento: 6
+commando: insert
+
+--- Expected output (exact text)---
+Heap=
+3
+6 9
+7
+
+Test 2: input02
+Incorrect program output
+--- Input ---
+# test 02
+
+insert  6 5 4  3  2  1
+print
+print_min
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 02
+commando: #
+argumento: 6
+commando: insert
+argumento: 5
+commando: insert
+argumento: 4
+commando: insert
+argumento: 3
+commando: insert
+argumento: 2
+commando: insert
+argumento: 1
+commando: insert
+
+--- Expected output (exact text)---
+Heap=
+1
+3 2
+6 4 5
+Min= 1
+
+Test 3: input03
+Incorrect program output
+--- Input ---
+# test 03
+
+dim_max
+dim
+print
+
+insert  8 7 6 5 4 3 2
+print
+dim
+insert 1
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 03
+commando: #
+argumento: 8
+commando: insert
+argumento: 7
+commando: insert
+argumento: 6
+commando: insert
+argumento: 5
+commando: insert
+argumento: 4
+commando: insert
+argumento: 3
+commando: insert
+argumento: 2
+commando: insert
+argumento: 1
+commando: insert
+
+--- Expected output (exact text)---
+Heap tem capacidade 15 itens
+Heap tem 0 itens
+Comando print: Heap vazio!
+Heap=
+2
+5 3
+8 6 7 4
+Heap tem 7 itens
+Heap=
+1
+2 3
+5 6 7 4
+8
+Heap tem 8 itens
+
+Test 4: input04
+Incorrect program output
+--- Input ---
+# test 04
+#
+
+insert 7 3 9 6
+print
+delete
+print
+delete
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 04
+commando: #
+argumento: 7
+commando: insert
+argumento: 3
+commando: insert
+argumento: 9
+commando: insert
+argumento: 6
+commando: insert
+
+--- Expected output (exact text)---
+Heap=
+3
+6 9
+7
+Heap=
+6
+7 9
+Heap=
+7
+9
+Heap tem 2 itens
+
+Test 5: input05
+Incorrect program output
+--- Input ---
+# test 05 (msg)
+
+dim
+clear
+print
+print_min
+delete
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 05
+commando: #
+argumento: (msg)
+commando: #
+
+--- Expected output (exact text)---
+Heap tem 0 itens
+Comando clear: Heap vazio!
+Comando print: Heap vazio!
+Comando print_min: Heap vazio!
+Comando delete: Heap vazio!
+
+Test 6: input06
+Incorrect program output
+--- Input ---
+# test 06 (itens repetidos)
+
+insert   8 7 6  5 4 3  2
+print
+insert 2 5
+print
+insert 2
+print
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 06
+commando: #
+argumento: (itens
+commando: #
+argumento: repetidos)
+commando: #
+argumento: 8
+commando: insert
+argumento: 7
+commando: insert
+argumento: 6
+commando: insert
+argumento: 5
+commando: insert
+argumento: 4
+commando: insert
+argumento: 3
+commando: insert
+argumento: 2
+commando: insert
+argumento: 2
+commando: insert
+argumento: 5
+commando: insert
+argumento: 2
+commando: insert
+
+--- Expected output (exact text)---
+Heap=
+2
+5 3
+8 6 7 4
+Heap=
+2
+2 3
+5 6 7 4
+8 5
+Heap=
+2
+2 3
+5 2 7 4
+8 5 6
+
+Test 7: input07
+Incorrect program output
+--- Input ---
+# test 07 (heap cheio)
+
+dim_max
+insert 9 13 6 1 14 15 5 4 3 8 10 11 7 12
+print
+insert 2 20 24
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 07
+commando: #
+argumento: (heap
+commando: #
+argumento: cheio)
+commando: #
+argumento: 9
+commando: insert
+argumento: 13
+commando: insert
+argumento: 6
+commando: insert
+argumento: 1
+commando: insert
+argumento: 14
+commando: insert
+argumento: 15
+commando: insert
+argumento: 5
+commando: insert
+argumento: 4
+commando: insert
+argumento: 3
+commando: insert
+argumento: 8
+commando: insert
+argumento: 10
+commando: insert
+argumento: 11
+commando: insert
+argumento: 7
+commando: insert
+argumento: 12
+commando: insert
+argumento: 2
+commando: insert
+argumento: 20
+commando: insert
+argumento: 24
+commando: insert
+
+--- Expected output (exact text)---
+Heap tem capacidade 15 itens
+Heap=
+1
+3 5
+4 8 7 9
+13 6 14 10 15 11 12
+Comando insert: Heap cheio!
+Heap=
+1
+3 2
+4 8 7 5
+13 6 14 10 15 11 12 9
+Heap tem 15 itens
+
+Test 8: input08
+Incorrect program output
+--- Input ---
+# test 08 (heapify)
+
+heapify_up 7 3  9   6
+print
+
+heapify_up 7 3  6 9
+print
+
+heapify_up 9 13 6 1 14 15 5 4 3 8 10 11 7 12 2
+print
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 08
+commando: #
+argumento: (heapify)
+commando: #
+argumento: 7
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 7
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 13
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 1
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 15
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 4
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 11
+commando: heapify_up
+argumento: 7
+commando: heapify_up
+argumento: 12
+commando: heapify_up
+argumento: 2
+commando: heapify_up
+
+--- Expected output (exact text)---
+Heap=
+3
+6 9
+7
+Heap=
+3
+7 6
+9
+Heap=
+1
+3 2
+4 8 7 5
+9 13 14 10 11 15 12 6
+
+Test 9: input09
+Incorrect program output
+--- Input ---
+# test 09
+
+redim_max  50
+dim_max
+insert   6  4 16 13 29 11 27  9 16 24 28 18  1 18 21
+insert   2 26  6  5 11 15 15 27 23 24  3 20  1 14
+insert  26 13 19  9 24 21  4  4 24 29 21  2 14 30 11
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 09
+commando: #
+argumento: 50
+commando: redim_max
+argumento: 6
+commando: insert
+argumento: 4
+commando: insert
+argumento: 16
+commando: insert
+argumento: 13
+commando: insert
+argumento: 29
+commando: insert
+argumento: 11
+commando: insert
+argumento: 27
+commando: insert
+argumento: 9
+commando: insert
+argumento: 16
+commando: insert
+argumento: 24
+commando: insert
+argumento: 28
+commando: insert
+argumento: 18
+commando: insert
+argumento: 1
+commando: insert
+argumento: 18
+commando: insert
+argumento: 21
+commando: insert
+argumento: 2
+commando: insert
+argumento: 26
+commando: insert
+argumento: 6
+commando: insert
+argumento: 5
+commando: insert
+argumento: 11
+commando: insert
+argumento: 15
+commando: insert
+argumento: 15
+commando: insert
+argumento: 27
+commando: insert
+argumento: 23
+commando: insert
+argumento: 24
+commando: insert
+argumento: 3
+commando: insert
+argumento: 20
+commando: insert
+argumento: 1
+commando: insert
+argumento: 14
+commando: insert
+argumento: 26
+commando: insert
+argumento: 13
+commando: insert
+argumento: 19
+commando: insert
+argumento: 9
+commando: insert
+argumento: 24
+commando: insert
+argumento: 21
+commando: insert
+argumento: 4
+commando: insert
+argumento: 4
+commando: insert
+argumento: 24
+commando: insert
+argumento: 29
+commando: insert
+argumento: 21
+commando: insert
+argumento: 2
+commando: insert
+argumento: 14
+commando: insert
+argumento: 30
+commando: insert
+argumento: 11
+commando: insert
+
+--- Expected output (exact text)---
+Heap tem capacidade 50 itens
+Heap=
+1
+2 1
+4 2 4 3
+9 4 11 11 18 11 14 13
+9 21 5 6 15 14 15 27 23 24 16 20 27 18 26 21
+19 13 26 24 16 6 24 29 29 21 24 30 28
+Heap tem 44 itens
+
+Test 10: input10
+Incorrect program output
+--- Input ---
+# test 10  Big insert 180
+
+redim_max 200
+insert 4 5 16 14 13 5 0 1 23 6 22 22 8 7 24 8 26 3 20 4 30 27 28 2 25
+insert 26 14 7 8 18 13 20 7 27 29 28 16 19 6 12 20 24 26 2 29 30 7 12 14 29
+insert 11 27 15 10 25 5 20 29 25 12 0 7 8 15 15 26 28 19 4 26 4 5 12 28 30
+insert 24 6 18 24 1 26 20 26 15 16 28 4 9 20 30 19 8 15 18 16 14 1 7 24 6
+insert 29 22 19 14 21 9 14 6 8 21 25 0 15 15 28 25 16 7 23 14 5 8 4 5 1
+insert 26 12 3 23 12 5 16 15 28 23 30 18 1 13 21 25 23 29 12 18 29 10 6 10 2
+insert 20 5 28 27 17 22 28 19 20 27 16 20 11 1 14 23 17 21 16 29 27 15 15 19 20
+insert 19 1 4 18 26
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 10
+commando: #
+argumento: Big
+commando: #
+argumento: insert
+commando: #
+argumento: 180
+commando: #
+argumento: 200
+commando: redim_max
+argumento: 4
+commando: insert
+argumento: 5
+commando: insert
+argumento: 16
+commando: insert
+argumento: 14
+commando: insert
+argumento: 13
+commando: insert
+argumento: 5
+commando: insert
+argumento: 0
+commando: insert
+argumento: 1
+commando: insert
+argumento: 23
+commando: insert
+argumento: 6
+commando: insert
+argumento: 22
+commando: insert
+argumento: 22
+commando: insert
+argumento: 8
+commando: insert
+argumento: 7
+commando: insert
+argumento: 24
+commando: insert
+argumento: 8
+commando: insert
+argumento: 26
+commando: insert
+argumento: 3
+commando: insert
+argumento: 20
+commando: insert
+argumento: 4
+commando: insert
+argumento: 30
+commando: insert
+argumento: 27
+commando: insert
+argumento: 28
+commando: insert
+argumento: 2
+commando: insert
+argumento: 25
+commando: insert
+argumento: 26
+commando: insert
+argumento: 14
+commando: insert
+argumento: 7
+commando: insert
+argumento: 8
+commando: insert
+argumento: 18
+commando: insert
+argumento: 13
+commando: insert
+argumento: 20
+commando: insert
+argumento: 7
+commando: insert
+argumento: 27
+commando: insert
+argumento: 29
+commando: insert
+argumento: 28
+commando: insert
+argumento: 16
+commando: insert
+argumento: 19
+commando: insert
+argumento: 6
+commando: insert
+argumento: 12
+commando: insert
+argumento: 20
+commando: insert
+argumento: 24
+commando: insert
+argumento: 26
+commando: insert
+argumento: 2
+commando: insert
+argumento: 29
+commando: insert
+argumento: 30
+commando: insert
+argumento: 7
+commando: insert
+argumento: 12
+commando: insert
+argumento: 14
+commando: insert
+argumento: 29
+commando: insert
+argumento: 11
+commando: insert
+argumento: 27
+commando: insert
+argumento: 15
+commando: insert
+argumento: 10
+commando: insert
+argumento: 25
+commando: insert
+argumento: 5
+commando: insert
+argumento: 20
+commando: insert
+argumento: 29
+commando: insert
+argumento: 25
+commando: insert
+argumento: 12
+commando: insert
+argumento: 0
+commando: insert
+argumento: 7
+commando: insert
+argumento: 8
+commando: insert
+argumento: 15
+commando: insert
+argumento: 15
+commando: insert
+argumento: 26
+commando: insert
+argumento: 28
+commando: insert
+argumento: 19
+commando: insert
+argumento: 4
+commando: insert
+argumento: 26
+commando: insert
+argumento: 4
+commando: insert
+argumento: 5
+commando: insert
+argumento: 12
+commando: insert
+argumento: 28
+commando: insert
+argumento: 30
+commando: insert
+argumento: 24
+commando: insert
+argumento: 6
+commando: insert
+argumento: 18
+commando: insert
+argumento: 24
+commando: insert
+argumento: 1
+commando: insert
+argumento: 26
+commando: insert
+argumento: 20
+commando: insert
+argumento: 26
+commando: insert
+argumento: 15
+commando: insert
+argumento: 16
+commando: insert
+argumento: 28
+commando: insert
+argumento: 4
+commando: insert
+argumento: 9
+commando: insert
+argumento: 20
+commando: insert
+argumento: 30
+commando: insert
+argumento: 19
+commando: insert
+argumento: 8
+commando: insert
+argumento: 15
+commando: insert
+argumento: 18
+commando: insert
+argumento: 16
+commando: insert
+argumento: 14
+commando: insert
+argumento: 1
+commando: insert
+argumento: 7
+commando: insert
+argumento: 24
+commando: insert
+argumento: 6
+commando: insert
+argumento: 29
+commando: insert
+argumento: 22
+commando: insert
+argumento: 19
+commando: insert
+argumento: 14
+commando: insert
+argumento: 21
+commando: insert
+argumento: 9
+commando: insert
+argumento: 14
+commando: insert
+argumento: 6
+commando: insert
+argumento: 8
+commando: insert
+argumento: 21
+commando: insert
+argumento: 25
+commando: insert
+argumento: 0
+commando: insert
+argumento: 15
+commando: insert
+argumento: 15
+commando: insert
+argumento: 28
+commando: insert
+argumento: 25
+commando: insert
+argumento: 16
+commando: insert
+argumento: 7
+commando: insert
+argumento: 23
+commando: insert
+argumento: 14
+commando: insert
+argumento: 5
+commando: insert
+argumento: 8
+commando: insert
+argumento: 4
+commando: insert
+argumento: 5
+commando: insert
+argumento: 1
+commando: insert
+argumento: 26
+commando: insert
+argumento: 12
+commando: insert
+argumento: 3
+commando: insert
+argumento: 23
+commando: insert
+argumento: 12
+commando: insert
+argumento: 5
+commando: insert
+argumento: 16
+commando: insert
+argumento: 15
+commando: insert
+argumento: 28
+commando: insert
+argumento: 23
+commando: insert
+argumento: 30
+commando: insert
+argumento: 18
+commando: insert
+argumento: 1
+commando: insert
+argumento: 13
+commando: insert
+argumento: 21
+commando: insert
+argumento: 25
+commando: insert
+argumento: 23
+commando: insert
+argumento: 29
+commando: insert
+argumento: 12
+commando: insert
+argumento: 18
+commando: insert
+argumento: 29
+commando: insert
+argumento: 10
+commando: insert
+argumento: 6
+commando: insert
+argumento: 10
+commando: insert
+argumento: 2
+commando: insert
+argumento: 20
+commando: insert
+argumento: 5
+commando: insert
+argumento: 28
+commando: insert
+argumento: 27
+commando: insert
+argumento: 17
+commando: insert
+argumento: 22
+commando: insert
+argumento: 28
+commando: insert
+argumento: 19
+commando: insert
+argumento: 20
+commando: insert
+argumento: 27
+commando: insert
+argumento: 16
+commando: insert
+argumento: 20
+commando: insert
+argumento: 11
+commando: insert
+argumento: 1
+commando: insert
+argumento: 14
+commando: insert
+argumento: 23
+commando: insert
+argumento: 17
+commando: insert
+argumento: 21
+commando: insert
+argumento: 16
+commando: insert
+argumento: 29
+commando: insert
+argumento: 27
+commando: insert
+argumento: 15
+commando: insert
+argumento: 15
+commando: insert
+argumento: 19
+commando: insert
+argumento: 20
+commando: insert
+argumento: 19
+commando: insert
+argumento: 1
+commando: insert
+argumento: 4
+commando: insert
+argumento: 18
+commando: insert
+argumento: 26
+commando: insert
+
+--- Expected output (exact text)---
+Heap=
+0
+1 0
+1 1 1 0
+3 2 1 1 4 6 2 1
+4 3 5 5 2 4 4 7 7 6 10 8 5 7 5 4
+5 14 4 7 10 5 6 18 11 6 16 15 4 19 8 16 12 8 11 19 15 14 9 21 7 15 16 8 12 5 5 8
+15 8 15 23 19 13 21 23 12 12 10 6 6 17 19 19 13 12 14 17 16 24 15 19 19 9 26 29 30 15 28 18 22 14 14 24 29 29 25 22 27 21 26 14 16 14 25 25 7 15 20 28 29 25 25 23 24 14 13 8 18 7 26 12
+20 23 15 12 26 16 28 28 30 27 26 18 29 25 26 29 28 18 29 16 28 23 30 20 24 28 27 20 22 28 24 20 27 16 26 20 20 20 26 23 30 21 29 27 28 15 26 20 27 20 22 18 30
+Heap tem 180 itens
+
+Test 11: input11
+Incorrect program output
+--- Input ---
+# test 11  Big insert 70 +  delete 10
+
+redim_max 200
+insert 10 19 22 21 3 29 0 21 21 30 19 26 12 26 20 30 1 27 16 1 8 5 14 18 13
+insert 3 30 3 0 5 13 0 23 21 16 13 10 19 13 19 28 27 22 1 26 30 15 26 23 19
+insert 3 4 25 17 10 12 14 19 24 7 5 12 20 6 18 15 0 9 21 2
+delete
+delete
+delete
+delete
+delete
+delete
+delete
+delete
+delete
+delete
+print_min
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 11
+commando: #
+argumento: Big
+commando: #
+argumento: insert
+commando: #
+argumento: 70
+commando: #
+argumento: +
+commando: #
+argumento: delete
+commando: #
+argumento: 10
+commando: #
+argumento: 200
+commando: redim_max
+argumento: 10
+commando: insert
+argumento: 19
+commando: insert
+argumento: 22
+commando: insert
+argumento: 21
+commando: insert
+argumento: 3
+commando: insert
+argumento: 29
+commando: insert
+argumento: 0
+commando: insert
+argumento: 21
+commando: insert
+argumento: 21
+commando: insert
+argumento: 30
+commando: insert
+argumento: 19
+commando: insert
+argumento: 26
+commando: insert
+argumento: 12
+commando: insert
+argumento: 26
+commando: insert
+argumento: 20
+commando: insert
+argumento: 30
+commando: insert
+argumento: 1
+commando: insert
+argumento: 27
+commando: insert
+argumento: 16
+commando: insert
+argumento: 1
+commando: insert
+argumento: 8
+commando: insert
+argumento: 5
+commando: insert
+argumento: 14
+commando: insert
+argumento: 18
+commando: insert
+argumento: 13
+commando: insert
+argumento: 3
+commando: insert
+argumento: 30
+commando: insert
+argumento: 3
+commando: insert
+argumento: 0
+commando: insert
+argumento: 5
+commando: insert
+argumento: 13
+commando: insert
+argumento: 0
+commando: insert
+argumento: 23
+commando: insert
+argumento: 21
+commando: insert
+argumento: 16
+commando: insert
+argumento: 13
+commando: insert
+argumento: 10
+commando: insert
+argumento: 19
+commando: insert
+argumento: 13
+commando: insert
+argumento: 19
+commando: insert
+argumento: 28
+commando: insert
+argumento: 27
+commando: insert
+argumento: 22
+commando: insert
+argumento: 1
+commando: insert
+argumento: 26
+commando: insert
+argumento: 30
+commando: insert
+argumento: 15
+commando: insert
+argumento: 26
+commando: insert
+argumento: 23
+commando: insert
+argumento: 19
+commando: insert
+argumento: 3
+commando: insert
+argumento: 4
+commando: insert
+argumento: 25
+commando: insert
+argumento: 17
+commando: insert
+argumento: 10
+commando: insert
+argumento: 12
+commando: insert
+argumento: 14
+commando: insert
+argumento: 19
+commando: insert
+argumento: 24
+commando: insert
+argumento: 7
+commando: insert
+argumento: 5
+commando: insert
+argumento: 12
+commando: insert
+argumento: 20
+commando: insert
+argumento: 6
+commando: insert
+argumento: 18
+commando: insert
+argumento: 15
+commando: insert
+argumento: 0
+commando: insert
+argumento: 9
+commando: insert
+argumento: 21
+commando: insert
+argumento: 2
+commando: insert
+
+--- Expected output (exact text)---
+Min= 3
+Heap=
+3
+5 3
+6 8 4 5
+9 10 19 14 13 10 12 5
+10 16 13 13 28 19 19 15 23 18 12 17 13 19 7 12
+18 15 21 21 27 16 21 19 30 30 27 22 21 26 30 23 29 26 19 21 26 25 30 20 26 14 20 24 22
+Heap tem 60 itens
+
+Test 12: input12
+Incorrect program output
+--- Input ---
+# test 12  Big heapify 120
+
+redim_max 200
+heapify_up 17 17 10 20 20 20 26 10 17 1 14 1 14 26 19 4 25 8 15 20 9 15 26 28 30 30 28 30 14 28 30 5 25 22 16 14 10 27 6 10 2 27 10 20 24 28 13 21 2 0 20 3 20 14 9 5 8 24 30 8 1 21 20 5 0 27 17 9 3 29 5 13 26 28 29 27 26 8 0 6 3 8 25 27 28 24 20 9 25 10 21 5 8 8 23 14 17 6 15 19 13 20 1 21 15 29 6 27 10 17 19 10 8 24 28 23 28 24 5 24
+print
+dim
+
+
+--- Program output ---
+Inicio
+argumento: test
+commando: #
+argumento: 12
+commando: #
+argumento: Big
+commando: #
+argumento: heapify
+commando: #
+argumento: 120
+commando: #
+argumento: 200
+commando: redim_max
+argumento: 17
+commando: heapify_up
+argumento: 17
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 26
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 17
+commando: heapify_up
+argumento: 1
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 1
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 26
+commando: heapify_up
+argumento: 19
+commando: heapify_up
+argumento: 4
+commando: heapify_up
+argumento: 25
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 15
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 15
+commando: heapify_up
+argumento: 26
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 30
+commando: heapify_up
+argumento: 30
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 30
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 30
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 25
+commando: heapify_up
+argumento: 22
+commando: heapify_up
+argumento: 16
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 2
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 13
+commando: heapify_up
+argumento: 21
+commando: heapify_up
+argumento: 2
+commando: heapify_up
+argumento: 0
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+argumento: 30
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 1
+commando: heapify_up
+argumento: 21
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 0
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 17
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 29
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 13
+commando: heapify_up
+argumento: 26
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 29
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 26
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 0
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 3
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 25
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 9
+commando: heapify_up
+argumento: 25
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 21
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 23
+commando: heapify_up
+argumento: 14
+commando: heapify_up
+argumento: 17
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 15
+commando: heapify_up
+argumento: 19
+commando: heapify_up
+argumento: 13
+commando: heapify_up
+argumento: 20
+commando: heapify_up
+argumento: 1
+commando: heapify_up
+argumento: 21
+commando: heapify_up
+argumento: 15
+commando: heapify_up
+argumento: 29
+commando: heapify_up
+argumento: 6
+commando: heapify_up
+argumento: 27
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 17
+commando: heapify_up
+argumento: 19
+commando: heapify_up
+argumento: 10
+commando: heapify_up
+argumento: 8
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 23
+commando: heapify_up
+argumento: 28
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+argumento: 5
+commando: heapify_up
+argumento: 24
+commando: heapify_up
+
+--- Expected output (exact text)---
+Heap=
+0
+0 0
+3 1 1 1
+4 6 2 5 1 3 5 8
+5 5 8 8 3 9 9 8 2 10 6 9 8 5 19 20
+5 17 9 16 13 10 26 15 6 8 27 10 15 10 14 8 14 6 13 20 15 14 10 17 10 8 23 14 24 28 21 30
+10 17 27 25 25 22 29 20 14 26 28 29 27 27 17 17 20 10 20 25 27 28 24 20 20 25 24 21 28 26 13 23 21 17 28 15 19 30 20 20 21 30 29 20 27 14 28 19 26 30 24 28 24 28 24 30 26
+Heap tem 120 itens
