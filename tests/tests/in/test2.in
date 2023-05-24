@@ -1,0 +1,5 @@
+# test 02
+
+insert  6 5 4  3  2  1
+print
+print_min

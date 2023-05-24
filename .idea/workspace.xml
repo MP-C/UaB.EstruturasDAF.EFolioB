@@ -9,13 +9,48 @@
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="UaB_EstruturasDAF_EFolioB" targetName="UaB_EstruturasDAF_EFolioB" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="" />
+    <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/compile.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test10.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test11.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test12.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test8.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/in/test9.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests/run_tests.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0ee268410e66ae5e93f0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f214754ce87ff3aabde1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-05-24T14-03-42-0983.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-UaB_EstruturasDAF_EFolioB-Debug-42aa3bb079bd948c38c2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +59,13 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectApplicationVersion">
@@ -33,18 +74,27 @@
     <option name="minorVersion" value="1.1" />
   </component>
   <component name="ProjectId" id="2QF6WGqU4yKQjJQqJKwPCmFPpPS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,8 +118,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684937013252</updated>
-      <workItem from="1684937015776" duration="1000" />
+      <workItem from="1684937015776" duration="5453000" />
     </task>
+    <task id="LOCAL-00001" summary="git init EFolioB">
+      <created>1684937057830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684937057830</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git init EFolioB add files">
+      <created>1684937083686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684937083686</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new branch">
+      <created>1684937146808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684937146808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="git init EFolioB" />
+    <MESSAGE value="git init EFolioB add files" />
+    <MESSAGE value="new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="new branch" />
   </component>
 </project>

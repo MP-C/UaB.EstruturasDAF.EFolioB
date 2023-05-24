@@ -1,0 +1,10 @@
+# test 04
+#
+
+insert 7 3 9 6
+print
+delete
+print
+delete
+print
+dim
