@@ -1,0 +1,3 @@
+C:/Users/capelam/Documents/MPC/EngInformatica/UaB/3Ano/2.Semestre/2.2.EstruturasDadosAlgoritmosFundamentais-21046-Cont/UaB.EstruturasDAF.EFolioB/cmake-build-debug/CMakeFiles/UaB_EstruturasDAF_EFolioB.dir
+C:/Users/capelam/Documents/MPC/EngInformatica/UaB/3Ano/2.Semestre/2.2.EstruturasDadosAlgoritmosFundamentais-21046-Cont/UaB.EstruturasDAF.EFolioB/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/capelam/Documents/MPC/EngInformatica/UaB/3Ano/2.Semestre/2.2.EstruturasDadosAlgoritmosFundamentais-21046-Cont/UaB.EstruturasDAF.EFolioB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
