@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UaB_EstruturasDAF_EFolioB",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UaB_EstruturasDAF_EFolioB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UaB_EstruturasDAF_EFolioB-Debug-42aa3bb079bd948c38c2.json",
+					"name" : "UaB_EstruturasDAF_EFolioB",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/capelam/Documents/MPC/EngInformatica/UaB/3Ano/2.Semestre/2.2.EstruturasDadosAlgoritmosFundamentais-21046-Cont/UaB.EstruturasDAF.EFolioB/cmake-build-debug",
+		"source" : "C:/Users/capelam/Documents/MPC/EngInformatica/UaB/3Ano/2.Semestre/2.2.EstruturasDadosAlgoritmosFundamentais-21046-Cont/UaB.EstruturasDAF.EFolioB"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
