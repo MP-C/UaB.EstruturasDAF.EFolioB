@@ -75,9 +75,8 @@ int main() {
             }
         }
         else if (comando == "redim_max") {// Redimensiona o número máximo de itens ou capacidade do heap
-            while(ssInput >> argumentos) {// Extrai os argumentoss do Input
+            ssInput >> argumentos;// Extrai os argumentos do Input, mas só um
                 minHeap.redim_max(argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
-            }
         }
         else {
             cout << "O comando introduzido nao e valido" <<endl; // Devolve uma mensagem de erro

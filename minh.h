@@ -26,30 +26,29 @@ class IMINH {
 private:
     // atributos obrigatórios
     int *v,     // vetor com nós
-        n,      // num. nós usados
-        nv;     // dim max do vetor (capacidade)
+        n,      // numero nós usados
+        nv;     // dimensão maxima do vetor = capacidade
 
-    int* heap;
-    int size;
-    int capacity;
-    void heapify_down(int i);
-    void swap(int& a, int& b);
 public:
     // construtores
-    IMINH(int nmax=15);    // cria heap vazio c/ capacidade nmax nós
-    ~IMINH();
+    IMINH(int nmaximo =15);    //  Construtor da classe IMINH que cria heap vazio c/ capacidade maxima de 15 nós
+    ~IMINH(); //Destrutor da classe IMINH que libera a memória alocada para o vetor de nós
 
     // outros atributos e métodos (protótipos) livres
-    void insert(int item);
-    void print_min() const;
-    void print() const;
-    int dim() const;
-    int dim_max() const;
-    void clear();
-    void remove();
-    void heapify_up(/*vector<int> int items*/); // TODO VETORES?!?!?!
-    void redim_max(int new_capacity);
-};
+    void insert(int item);  // 1. Insere um item no heap. Caso o heap esteja cheio, exibe uma mensagem de erro.
+    void print_min() const; // 2. Imprime o valor mínimo (raiz) do heap. Caso o heap esteja vazio, exibe uma mensagem de erro
+    void print() const;     // 3. Imprime todos os nós do heap
+    int dim() const;        // 4. Retorna mensagem com o número de nós atualmente presentes no heap
+    int dim_max() const;    // 5. Retorna mensagem com a capacidade máxima do heap (número máximo de nós que ele pode armazenar)
+    void clear();           // 6. Remove todos os nós do heap
+    void remove();          // 7. Remove o nó mínimo (raiz) do heap
+    //TODO VETORES?!?!?!
+    void heapify_up(/*vector<int> int items*/); // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
+    void redim_max(int new_capacity); // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
+    // TODO ?!?!?
+    //void heapify_down(int i);
+    //void swap(int& a, int& b);
 
+};
 #endif
 // EOF
