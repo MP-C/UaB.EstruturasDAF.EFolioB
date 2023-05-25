@@ -26,8 +26,7 @@ Heap=
 6 9
 7
 
-
-
+////////////////////////
 Test 2: input02
 --- Input ---
 # test 02
@@ -43,8 +42,7 @@ Heap=
 6 4 5
 Min= 1
 
-
-
+////////////////////////
 Test 3: input03
 --- Input ---
 # test 03
@@ -78,9 +76,7 @@ Heap=
 8
 Heap tem 8 itens
 
-
-
-
+////////////////////////
 Test 4: input04
 --- Input ---
 # test 04
@@ -106,8 +102,7 @@ Heap=
 9
 Heap tem 2 itens
 
-
-
+////////////////////////
 Test 5: input05
 --- Input ---
 # test 05 (msg)
@@ -126,8 +121,7 @@ Comando print: Heap vazio!
 Comando print_min: Heap vazio!
 Comando delete: Heap vazio!
 
-
-
+////////////////////////
 Test 6: input06
 --- Input ---
 # test 06 (itens repetidos)
@@ -155,8 +149,7 @@ Heap=
 5 2 7 4
 8 5 6
 
-
-
+////////////////////////
 Test 7: input07
 Incorrect program output
 --- Input ---
@@ -184,8 +177,7 @@ Heap=
 13 6 14 10 15 11 12 9
 Heap tem 15 itens
 
-
-
+////////////////////////
 Test 8: input08
 Incorrect program output
 --- Input ---
@@ -215,8 +207,7 @@ Heap=
 4 8 7 5
 9 13 14 10 11 15 12 6
 
-
-
+////////////////////////
 Test 9: input09
 Incorrect program output
 --- Input ---
@@ -243,7 +234,7 @@ Heap=
 19 13 26 24 16 6 24 29 29 21 24 30 28
 Heap tem 44 itens
 
-
+////////////////////////
 Test 10: input10
 Incorrect program output
 # test 10  Big insert 180
@@ -273,6 +264,7 @@ Heap=
 20 23 15 12 26 16 28 28 30 27 26 18 29 25 26 29 28 18 29 16 28 23 30 20 24 28 27 20 22 28 24 20 27 16 26 20 20 20 26 23 30 21 29 27 28 15 26 20 27 20 22 18 30
 Heap tem 180 itens
 
+////////////////////////
 Test 11: input11
 --- Input ---
 # test 11  Big insert 70 +  delete 10
@@ -306,7 +298,7 @@ Heap=
 18 15 21 21 27 16 21 19 30 30 27 22 21 26 30 23 29 26 19 21 26 25 30 20 26 14 20 24 22
 Heap tem 60 itens
 
-
+////////////////////////
 Test 12: input12
 --- Input ---
 # test 12  Big heapify 120

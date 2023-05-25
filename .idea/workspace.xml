@@ -22,6 +22,9 @@
   <component name="ChangeListManager">
     <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VPLtestes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/VPLtestes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
@@ -92,6 +95,7 @@
       <workItem from="1684937015776" duration="9084000" />
       <workItem from="1684946515595" duration="895000" />
       <workItem from="1684997873521" duration="5510000" />
+      <workItem from="1685049600008" duration="6456000" />
     </task>
     <task id="LOCAL-00001" summary="git init EFolioB">
       <created>1684937057830</created>
