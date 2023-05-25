@@ -1,0 +1,12 @@
+# test 03
+
+dim_max
+dim
+print
+
+insert  8 7 6 5 4 3 2
+print
+dim
+insert 1
+print
+dim

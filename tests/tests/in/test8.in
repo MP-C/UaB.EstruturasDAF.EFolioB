@@ -1,0 +1,10 @@
+# test 08 (heapify)
+
+heapify_up 7 3  9   6
+print
+
+heapify_up 7 3  6 9
+print
+
+heapify_up 9 13 6 1 14 15 5 4 3 8 10 11 7 12 2
+print
