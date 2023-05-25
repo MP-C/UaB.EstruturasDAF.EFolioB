@@ -26,30 +26,31 @@ class IMINH {
 private:
     // atributos obrigatórios
     int *v,     // vetor com nós
-        n,      // num. nós usados
-        nv;     // dim max do vetor (capacidade)
+        n,      // numero nós usados
+        nv;     // dimensão maxima do vetor = capacidade
 
-    int* heap;
-    int size;
-    int capacity;
-    void heapify_down(int i);
-    void swap(int& a, int& b);
 public:
-    // construtores
-    IMINH(int nmax=15);    // cria heap vazio c/ capacidade nmax nós
-    ~IMINH();
+    // Construtores
+    IMINH(int nmaximo =15); //  Construtor da classe IMINH que cria heap vazio c/ capacidade maxima de 15 nós
+    ~IMINH();               //Destrutor da classe IMINH que libera a memória alocada para o vetor de nós
 
-    // outros atributos e métodos (protótipos) livres
-    void insert(int item);
-    void print_min() const;
-    void print() const;
-    int dim() const;
-    int dim_max() const;
-    void clear();
-    void remove();
-    void heapify_up(/*vector<int> int items*/); // TODO VETORES?!?!?!
-    void redim_max(int new_capacity);
+    // Outros atributos e métodos (protótipos) livres
+    void insere(string, int);                   // 1. Insere um item no heap. Caso o heap esteja cheio, exibe uma mensagem de erro.
+    void imprime_min(string);                  // 2. Imprime o valor mínimo (raiz) do heap. Caso o heap esteja vazio, exibe uma mensagem de erro
+    void imprime(string);                      // 3. Imprime todos os nós do heap
+    void dimensao(string);                     // 4. Retorna mensagem com o número de nós atualmente presentes no heap
+    void dimensao_max(string);                 // 5. Retorna mensagem com a capacidade máxima do heap (número máximo de nós que ele pode armazenar)
+    void apaga(string);                              // 6. Remove todos os nós do heap
+    void remove(string);                             // 7. Remove o nó mínimo (raiz) do heap
+    void heapify_up(string, int); // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
+    void redimensao_max(string, int );   // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
+
+    // Funções auxiliares
+    void inverte(int&, int&);                   // 10. Troca a ordem
+    // TODO ?!?!?
+    //void heapify_down(int i);
+    //void swap(int& a, int& b);
+
 };
-
 #endif
 // EOF
