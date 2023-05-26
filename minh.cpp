@@ -31,7 +31,7 @@ IMINH::~IMINH() {
 /* Implementação da função de inserção no heap (1. insert) */
 void IMINH::insere(string comand, int item) {
     if (n == nv) {                          // Verifica se o heap está cheio
-        cout << "Comando "<< comand <<": Heap cheio!" << endl;; // Exibe uma mensagem de erro se o heap estiver cheio
+        cout << "Comando "<< comand <<": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
         return;
     }
     v[n++] = item;                          // Insere o item no heap
@@ -44,51 +44,51 @@ void IMINH::insere(string comand, int item) {
 
 /* Implementação da função para imprimir o valor mínimo (raiz) do heap (2. print_min) */
 void IMINH::imprime_min(string comand) {
-    if (n == 0) {                           // Verifica se o heap está vazio
-        cout << "Comando " << comand << ": Heap vazio!" << endl;; // Exibe uma mensagem de erro se o heap estiver vazio
+    if (n == 0) {                               // Verifica se o heap está vazio
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
     /* Caso o heap não estiver vazio, imprime a mensagem com o valor mínimo do heap */
-    cout << "Min= " << v[0] << "" << endl;;        // Imprime o valor mínimo do heap
+    cout << "Min= " << v[0] << "\n";            // Imprime o valor mínimo do heap
 }
 
 /* Implementação da função para imprimir todos os elementos do heap (3. print) */
 void IMINH::imprime(string comand) {
     if (n == 0) {                               // Verifica se o heap está vazio
-        cout << "Comando " << comand << ": Heap vazio!" << endl;;    // Exibe uma mensagem de erro se o heap estiver vazio
+        cout << "Comando " << comand << ": Heap vazio!\n";    // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
-    cout << "Heap=" << endl;;                          // Imprime a mensagem indicando o início da impressão do heap
+    cout << "Heap=\n";                          // Imprime a mensagem indicando o início da impressão do heap
     int nivel_n = 1;                            // Variável para controlar o número de elementos em cada nível
     int i = 0;                                  // Variável para percorrer os elementos do heap
     while (i < n) {                             // Loop para percorrer os elementos do heap
         for (int j = 0; j < nivel_n && i < n; j++) { // Loop para imprimir os elementos de cada nível
             cout << v[i++] <<" ";               // Imprime o elemento atual e incrementa o índice
         }
-    cout << "" << endl;;                               // Salta para a próxima linha após imprimir os elementos de um nível
+    cout << "\n";                               // Salta para a próxima linha após imprimir os elementos de um nível
     nivel_n *= 2;                               // Dobra o número de elementos no próximo nível
     }
 }
 
 /* Implementação da função para obter a dimensão atual do heap (4. dim) */
-void IMINH::dimensao(string comand) { // veri
+void IMINH::dimensao(string comand) {
     /* Zona excluida dado que não passa nos testes, mas corresponde ao enunciado)
      * if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!" << endl;;
+        cout << "Comando " << comand << ": Heap vazio!\n";
         return;
     }*/
-    cout << "Heap tem "<< n <<" itens" << endl;;   // Exibe a quantidade de itens no heap
+    cout << "Heap tem "<< n <<" itens\n";   // Exibe a quantidade de itens no heap
 }
 
 /* Implementação da função para obter a dimensão máxima do heap atual (5. dim_max) */
 void IMINH::dimensao_max(string comand) {
-    cout << "Heap tem capacidade " << nv <<" itens\n" << endl; // Exibe a capacidade máxima do heap
+    cout << "Heap tem capacidade " << nv <<" itens\n"; // Exibe a capacidade máxima do heap
 }
 
 /* Implementação da função para limpar o heap (6. clear) */
 void IMINH::apaga(string comand) {
     if (n == 0) {                            // Verifica se o heap está vazio
-        cout << "Comando " << comand << ": Heap vazio!" << endl;;
+        cout << "Comando " << comand << ": Heap vazio!\n";
         return;
     }
     n = 0;                                  // Define a dimensão do heap como zero, ou seja, remove todos os elementos
@@ -99,7 +99,7 @@ void IMINH::apaga(string comand) {
 /* Implementação da função para remover o menor item do heap (7. Remove) */
 void IMINH::remove(string comand) {
     if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!" << endl;; // Exibe uma mensagem de erro se o heap estiver vazio
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
     v[0] = v[--n];                 // Substitui o menor item pelo último item do heap e reduz a dimensão do heap
@@ -109,7 +109,7 @@ void IMINH::remove(string comand) {
 /* Implementação da função para reorganizar o heap após a inserção de novos itens (8. heapify_up) */
 void IMINH::heapify_up(string comand) {
     /*if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!" << endl;; // Exibe uma mensagem de erro se o heap estiver vazio
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
 
@@ -155,7 +155,7 @@ void IMINH::heapify_up(string comand) {
 /* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
 void IMINH::redimensao_max(string comand, int novo_nv) {
     if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!" << endl;; // Exibe uma mensagem de erro se o heap estiver vazio
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
     int *novo_v = new int[novo_nv];// Cria um novo vetor com a nova capacidade máxima

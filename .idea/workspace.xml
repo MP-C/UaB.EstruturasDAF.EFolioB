@@ -22,16 +22,9 @@
   <component name="ChangeListManager">
     <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minh.h" beforeDir="false" afterPath="$PROJECT_DIR$/minh.h" afterDir="false" />
-    </list>
-    <list id="a95b51af-5123-4360-9f9c-a20501a697a3" name="Changes by joao.carvalho" comment="">
       <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
     </list>
+    <list id="a95b51af-5123-4360-9f9c-a20501a697a3" name="Changes by joao.carvalho" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,27 +41,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/minh.cpp">
-      <ranges>
-        <range start1="33" end1="34" start2="33" end2="34" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="47" end1="48" start2="47" end2="48" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="51" end1="52" start2="51" end2="52" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="57" end1="58" start2="57" end2="58" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="60" end1="61" start2="60" end2="61" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="65" end1="66" start2="65" end2="66" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="67" end1="69" start2="67" end2="69" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="76" end1="77" start2="76" end2="77" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="79" end1="80" start2="79" end2="80" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="84" end1="85" start2="84" end2="85" changelist="a95b51af-5123-4360-9f9c-a20501a697a3" />
-        <range start1="90" end1="91" start2="90" end2="91" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="101" end1="102" start2="101" end2="102" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="109" end1="112" start2="109" end2="120" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="113" end1="113" start2="121" end2="153" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="117" end1="118" start2="157" end2="158" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -120,7 +92,7 @@
       <workItem from="1684946515595" duration="895000" />
       <workItem from="1684997873521" duration="5510000" />
       <workItem from="1685049600008" duration="7930000" />
-      <workItem from="1685093352916" duration="11220000" />
+      <workItem from="1685093352916" duration="11479000" />
     </task>
     <task id="LOCAL-00001" summary="git init EFolioB">
       <created>1684937057830</created>
@@ -185,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685097063520</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL">
+      <created>1685115503714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685115503714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +186,8 @@
     <MESSAGE value="main OK com testes OK" />
     <MESSAGE value="algumas funções principais OK&#10;Falta testes e verificações" />
     <MESSAGE value="verificações ok para: print, print_min, dim, dim_max, clear, delete, remove, redim_max, e auxiliares(invert, heapify_down)&#10;Não passa nos testes do VPL" />
-    <option name="LAST_COMMIT_MESSAGE" value="verificações ok para: print, print_min, dim, dim_max, clear, delete, remove, redim_max, e auxiliares(invert, heapify_down)&#10;Não passa nos testes do VPL" />
+    <MESSAGE value="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
+    <option name="LAST_COMMIT_MESSAGE" value="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
