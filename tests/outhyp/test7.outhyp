@@ -1,0 +1,18 @@
+O comando introduzido nao e valido
+O comando introduzido nao e valido
+Heap tem capacidade 15 itens
+
+Heap=
+1 
+3 5 
+4 8 7 9 
+13 6 14 10 15 11 12 
+Comando insert: Heap cheio!
+Comando insert: Heap cheio!
+Heap=
+1 
+3 2 
+4 8 7 5 
+13 6 14 10 15 11 12 9 
+Heap tem 15 itens
+

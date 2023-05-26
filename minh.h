@@ -35,22 +35,19 @@ public:
     ~IMINH();               //Destrutor da classe IMINH que libera a memória alocada para o vetor de nós
 
     // Outros atributos e métodos (protótipos) livres
-    void insere(string, int);                   // 1. Insere um item no heap. Caso o heap esteja cheio, exibe uma mensagem de erro.
+    void insere(string, int);                  // 1. Insere um item no heap. Caso o heap esteja cheio, exibe uma mensagem de erro.
     void imprime_min(string);                  // 2. Imprime o valor mínimo (raiz) do heap. Caso o heap esteja vazio, exibe uma mensagem de erro
     void imprime(string);                      // 3. Imprime todos os nós do heap
     void dimensao(string);                     // 4. Retorna mensagem com o número de nós atualmente presentes no heap
     void dimensao_max(string);                 // 5. Retorna mensagem com a capacidade máxima do heap (número máximo de nós que ele pode armazenar)
-    void apaga(string);                              // 6. Remove todos os nós do heap
-    void remove(string);                             // 7. Remove o nó mínimo (raiz) do heap
-    void heapify_up(string, int); // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
-    void redimensao_max(string, int );   // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
+    void apaga(string);                        // 6. Remove todos os nós do heap
+    void remove(string);                       // 7. Remove o nó mínimo (raiz) do heap
+    void heapify_up(string, int);              // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
+    void redimensao_max(string, int );         // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
 
     // Funções auxiliares
-    void inverte(int&, int&);                   // 10. Troca a ordem
-    // TODO ?!?!?
-    //void heapify_down(int i);
-    //void swap(int& a, int& b);
-
+    void inverte(int&, int&);                  // 10. Troca a ordem
+    void heapify_down(int);                    // 11. Para reorganizar o heap após ação de outra função
 };
 #endif
 // EOF

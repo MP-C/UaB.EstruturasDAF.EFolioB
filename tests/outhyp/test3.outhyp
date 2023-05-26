@@ -1,0 +1,20 @@
+O comando introduzido nao e valido
+O comando introduzido nao e valido
+Heap tem capacidade 15 itens
+
+Comando dim: Heap vazio!
+Comando print: Heap vazio!
+Comando print: Heap vazio!
+Heap=
+2 
+5 3 
+8 6 7 4 
+Heap tem 7 itens
+
+Heap=
+1 
+2 3 
+5 6 7 4 
+8 
+Heap tem 8 itens
+
