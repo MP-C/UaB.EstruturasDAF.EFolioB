@@ -31,8 +31,8 @@ private:
 
 public:
     // Construtores
-    IMINH(int nmaximo =15); //  Construtor da classe IMINH que cria heap vazio c/ capacidade maxima de 15 nós
-    ~IMINH();               //Destrutor da classe IMINH que libera a memória alocada para o vetor de nós
+    IMINH(int nmaximo =15); // Construtor da classe IMINH que cria heap vazio c/ capacidade maxima de 15 nós
+    ~IMINH();               // Destrutor da classe IMINH que libera a memória alocada para o vetor de nós
 
     // Outros atributos e métodos (protótipos) livres
     void insere(string, int);                  // 1. Insere um item no heap. Caso o heap esteja cheio, exibe uma mensagem de erro.
@@ -42,11 +42,10 @@ public:
     void dimensao_max(string);                 // 5. Retorna mensagem com a capacidade máxima do heap (número máximo de nós que ele pode armazenar)
     void apaga(string);                        // 6. Remove todos os nós do heap
     void remove(string);                       // 7. Remove o nó mínimo (raiz) do heap
-    void heapify_up(string, int);              // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
-    void redimensao_max(string, int );         // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
-
-    // Funções auxiliares
+    void heapify_up(string);              // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
+    //void heapify_up(int,int);
     void inverte(int&, int&);                  // 10. Troca a ordem
+    void redimensao_max(string, int );         // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
     void heapify_down(int);                    // 11. Para reorganizar o heap após ação de outra função
 };
 #endif
