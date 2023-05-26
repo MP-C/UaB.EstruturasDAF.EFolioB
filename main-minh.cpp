@@ -45,6 +45,7 @@ int main() {
         //string comandoValido = validarComando(input);   // Verifica se o comando é valido (diferente de vazio e de #)
         ssInput >> comando;                             // Extrai o nome do comando
 
+
         /* Verifica que o comando introduzido é válido*/
         if (comando[0] == '#' || comando.length()==0 ) {// Se o comando introduzido for um comentario (#) ou estiver vazio ignora-se a linha completamente
             continue;                                   // pois é uma linha de comentário

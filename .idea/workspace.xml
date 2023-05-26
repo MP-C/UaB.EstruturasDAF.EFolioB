@@ -21,22 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minh.h" beforeDir="false" afterPath="$PROJECT_DIR$/minh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/compile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/outhyp/test1.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test1.outhyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/run_tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_tests.sh" afterDir="false" />
     </list>
     <list id="a95b51af-5123-4360-9f9c-a20501a697a3" name="Changes by joao.carvalho" comment="" />
-    <list id="3783cfaf-08e0-46d1-826f-92f94c46f6de" name="Changes by jonid" comment="">
-      <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
-    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,16 +45,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/main-minh.cpp">
-      <ranges>
-        <range start1="52" end1="53" start2="52" end2="54" changelist="3783cfaf-08e0-46d1-826f-92f94c46f6de" />
-        <range start1="77" end1="78" start2="78" end2="79" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="87" end1="87" start2="88" end2="90" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-        <range start1="88" end1="88" start2="91" end2="93" changelist="87d5cd52-048a-4c56-a134-266b2c505e85" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -150,7 +132,7 @@
       <workItem from="1684946515595" duration="895000" />
       <workItem from="1684997873521" duration="5510000" />
       <workItem from="1685049600008" duration="7930000" />
-      <workItem from="1685093352916" duration="20342000" />
+      <workItem from="1685093352916" duration="24161000" />
     </task>
     <task id="LOCAL-00001" summary="git init EFolioB">
       <created>1684937057830</created>
@@ -229,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685115599670</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Não passa nos testes do VPL&#10;Mas 1 ok">
+      <created>1685131561475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685131561475</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +242,7 @@
     <MESSAGE value="verificações ok para: print, print_min, dim, dim_max, clear, delete, remove, redim_max, e auxiliares(invert, heapify_down)&#10;Não passa nos testes do VPL" />
     <MESSAGE value="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
     <MESSAGE value="/n em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
-    <option name="LAST_COMMIT_MESSAGE" value="/n em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
+    <MESSAGE value="Não passa nos testes do VPL&#10;Mas 1 ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Não passa nos testes do VPL&#10;Mas 1 ok" />
   </component>
 </project>
