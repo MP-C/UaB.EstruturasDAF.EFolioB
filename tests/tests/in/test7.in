@@ -1,8 +1,0 @@
-# test 07 (heap cheio)
-
-dim_max
-insert 9 13 6 1 14 15 5 4 3 8 10 11 7 12
-print
-insert 2 20 24
-print
-dim

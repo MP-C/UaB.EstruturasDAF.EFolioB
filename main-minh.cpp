@@ -41,41 +41,42 @@ int main() {
 
     while (getline(cin, input)) {
         stringstream ssInput(input); // Extrai a linha completa e guarda em ssInput
-        /* Verifica que o comando introduzido é válido*/
-        string comandoValido = validarComando(input); // Verifica se o comando é valido (diferente de vazio e de #)
-        ssInput >> comando; // Extrai o nome do comando
 
-        if (comando == "insert") {// Insere no início da lista um novo nó
-            while(ssInput >> argumentos) { // Extrai os argumentoss do Input
-                // Insere itens no heap pela ordem apresentada
-                minHeap.insere(comando, argumentos); // Caso existam argumentos, faz os ciclos para executar o comando tantas vezes quanto necessario
+        /* Verifica que o comando introduzido é válido*/
+        string comandoValido = validarComando(input);   // Verifica se o comando é valido (diferente de vazio e de #)
+        ssInput >> comando;                             // Extrai o nome do comando
+
+        if (comando == "insert") {                      // Insere no início da lista um novo nó
+            while(ssInput >> argumentos) {              // Extrai os argumentoss do input
+            /* Insere itens no heap pela ordem apresentada */
+                minHeap.insere(comando, argumentos);    // Caso existam argumentos, faz os ciclos para executar o comando tantas vezes quanto necessario
             }
         }
-        else if (comando == "print_min") { //Imprime o menor item no heap
+        else if (comando == "print_min") {             // Imprime o menor item no heap
             minHeap.imprime_min(comando);
         }
-        else if (comando == "print"){// Imprime toda a árvore do heap
+        else if (comando == "print"){                  // Imprime toda a árvore do heap
             minHeap.imprime(comando);
         }
-        else if (comando == "dim") {// Imprime o número de itens no heap
+        else if (comando == "dim") {                   // Imprime o número de itens no heap
             minHeap.dimensao(comando);
         }
-        else if (comando == "dim_max"){// Imprime o número máximo de itens ou capacidade do heap
+        else if (comando == "dim_max"){                // Imprime o número máximo de itens ou capacidade do heap
             minHeap.dimensao_max(comando);
         }
-        else if (comando == "clear"){// Inicializa o heap com zero elementos
+        else if (comando == "clear"){                  // Inicializa o heap com zero elementos
             minHeap.apaga(comando);
         }
-        else if (comando == "delete"){// Remove o menor item no heap
+        else if (comando == "delete"){                 // Remove o menor item no heap
             minHeap.remove(comando);
         }
-        else if (comando == "heapify_up") {// Converte o vetor definido pelos itens "item ..." num min Heap
-            while(ssInput >> argumentos) {// Extrai os argumentoss do Input
-                minHeap.heapify_up(comando/*argumentos*/); // Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
+        else if (comando == "heapify_up") {             // Converte o vetor definido pelos itens "item..." num min Heap
+            while(ssInput >> argumentos) {              // Extrai os argumentoss do input
+                minHeap.heapify_up(comando, argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
             }
         }
-        else if (comando == "redim_max") {// Redimensiona o número máximo de itens ou capacidade do heap
-            ssInput >> argumentos;// Extrai os argumentos do Input, mas só um
+        else if (comando == "redim_max") {                  // Redimensiona o número máximo de itens ou capacidade do heap
+            ssInput >> argumentos;                          // Extrai os argumentos do input, mas só um
                 minHeap.redimensao_max(comando, argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
         }
         else {
