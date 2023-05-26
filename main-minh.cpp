@@ -75,7 +75,7 @@ int main() {
         }
         else if (comando == "heapify_up") {             // Converte o vetor definido pelos itens "item..." num min Heap
             while(ssInput >> argumentos) {              // Extrai os argumentoss do input
-                minHeap.heapify_up(comando);            // Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
+                minHeap.heapify_up(comando, argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
             }
         }
         else if (comando == "redim_max") {                  // Redimensiona o número máximo de itens ou capacidade do heap
@@ -85,7 +85,11 @@ int main() {
         else {
             cout << "O comando introduzido nao e valido" << endl; // Devolve uma mensagem de erro
         }
+        /* Para limpar a última entrada e não se repetir o comando */
+        comando = "";
     }
+    /* Para limpar as últimas entradas e não se repetirem os inputs */
+    input="";
     return 0;
 }
 // EOF
