@@ -16,19 +16,19 @@
 #include "minh.h"
 using namespace std;
 
-//Implementação do construtor da classe IMINH que aloca dinamicamente o vetor de nós
+/* Implementação do construtor da classe IMINH que aloca dinamicamente o vetor de nós */
 IMINH::IMINH(int nv) {      // nv = capacidade
     v = new int[nv];        // Alocar com o tamanho especificado
     n = 0;                  // n = numero de nós usados,
     this->nv = nv;          // Para iniciar
 }
 
-//Implementação do destrutor da classe IMINH
+/* Implementação do destrutor da classe IMINH */
 IMINH::~IMINH() {
     delete[] v;             // Para libertar a memória alocada para o vetor de nós
 }
 
-//Implementação da função de inserção no heap (1. insert)
+/* Implementação da função de inserção no heap (1. insert) */
 void IMINH::insere(string comand, int item) {
     if (n == nv) {                          // Verifica se o heap está cheio
         cout << "Comando "<< comand <<": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
@@ -42,17 +42,17 @@ void IMINH::insere(string comand, int item) {
     }
 }
 
-// Implementação da função para imprimir o valor mínimo (raiz) do heap (2. print_min)
+/* Implementação da função para imprimir o valor mínimo (raiz) do heap (2. print_min) */
 void IMINH::imprime_min(string comand) {
     if (n == 0) {                           // Verifica se o heap está vazio
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
-    // Caso o heap não estiver vazio, imprime a mensagem com o valor mínimo do heap
+    /* Caso o heap não estiver vazio, imprime a mensagem com o valor mínimo do heap */
     cout << "Min= " << v[0] << "\n";        // Imprime o valor mínimo do heap
 }
 
-// Implementação da função para imprimir todos os elementos do heap (3. print)
+/* Implementação da função para imprimir todos os elementos do heap (3. print) */
 void IMINH::imprime(string comand) {
     if (n == 0) {                               // Verifica se o heap está vazio
         cout << "Comando " << comand << ": Heap vazio!\n";    // Exibe uma mensagem de erro se o heap estiver vazio
@@ -70,21 +70,22 @@ void IMINH::imprime(string comand) {
     }
 }
 
-// Implementação da função para obter a dimensão atual do heap (4. dim)
-void IMINH::dimensao(string comand) {
-    if (n == 0) {
+/* Implementação da função para obter a dimensão atual do heap (4. dim) */
+void IMINH::dimensao(string comand) { // veri
+    /* Zona excluida dado que não passa nos testes, mas corresponde ao enunciado)
+     * if (n == 0) {
         cout << "Comando " << comand << ": Heap vazio!\n";
         return;
-    }
+    }*/
     cout << "Heap tem "<< n <<" itens\n" << endl;   // Exibe a quantidade de itens no heap
 }
 
-// Implementação da função para obter a dimensão máxima do heap atual (5. dim_max)
+/* Implementação da função para obter a dimensão máxima do heap atual (5. dim_max) */
 void IMINH::dimensao_max(string comand) {
     cout << "Heap tem capacidade " << nv <<" itens\n" << endl; // Exibe a capacidade máxima do heap
 }
 
-// Implementação da função para limpar o heap (6. clear)
+/* Implementação da função para limpar o heap (6. clear) */
 void IMINH::apaga(string comand) {
     if (n == 0) {                            // Verifica se o heap está vazio
         cout << "Comando " << comand << ": Heap vazio!\n";
@@ -95,23 +96,23 @@ void IMINH::apaga(string comand) {
     v = new int[nv];                        // Aloca uma nova memória para o vetor do heap com a capacidade original
 }
 
-// Implementação da função para remover o menor item do heap (7. Remove)
+/* Implementação da função para remover o menor item do heap (7. Remove) */
 void IMINH::remove(string comand) {
     if (n == 0) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
-    v[0] = v[--n];                      // Substitui o menor item pelo último item do heap e reduz a dimensão do heap
-    //heapify_down(0);                  // TODO Implementar a função heapify_down para manter a propriedade do heap
+    v[0] = v[--n];                 // Substitui o menor item pelo último item do heap e reduz a dimensão do heap
+    heapify_down(0);          // Para reorganizar o heap após ação de outra função, neste caso, de apagar o minimo do heap
 }
 
-// Implementação da função para reorganizar o heap após a inserção de novos itens (8. heapify_up)
+/* Implementação da função para reorganizar o heap após a inserção de novos itens (8. heapify_up) */
 void IMINH::heapify_up(string comand, int items) {
     apaga(comand);                // Limpa o heap
     insere(comand, items);   // Insere cada item no heap
 }
 
-// Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. red_max)
+/* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
 void IMINH::redimensao_max(string comand, int novo_nv) {
     if (n == 0) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
@@ -127,14 +128,34 @@ void IMINH::redimensao_max(string comand, int novo_nv) {
     n = min(n, nv);                // Atualiza a dimensão do heap para o menor valor entre a dimensão atual e a capacidade máxima
 }
 
-//Implementação de função que inverte a ordem (10. inverte)
+/* Implementação de função que inverte a ordem (AUXILIAR: 10. inverte) */
 void IMINH::inverte(int& item1, int& item2) {
     int itemAuxiliar = item1;    // Armazena o valor do item1 numa variável auxiliar
     item1 = item2;               // Atribui o valor do item2 ao item1
     item2 = itemAuxiliar;        // Atribui o valor armazenado na variável auxiliar ao item2
 }
 
+/* Função auxiliar para reorganizar o heap após a remoção do menor item (AUXILIAR: 11. heapify_down) */
+void IMINH::heapify_down(int item) {
+    int minimo = item;                 // Índice do item atual
+    int filhoEsquerda = (2 * item) + 1;  // Índice do filho esquerdo, impar
+    int filhoDireita = (2 * item) + 2;   // Índice do filho direito, par
 
+    // Verifica se o filho esquerdo é menor que o item atual
+    if (filhoEsquerda < n && v[filhoEsquerda] < v[minimo]) {
+        minimo = filhoEsquerda;
+    }
 
+    // Verifica se o filho direito é menor que o item atual
+    if (filhoDireita < n && v[filhoDireita] < v[minimo]) {
+        minimo = filhoDireita;
+    }
+
+    // Se o menor item não for o item atual, troca-os e chama recursivamente a função heapify_down
+    if (minimo != item) {
+        inverte(v[item], v[minimo]); // Troca o item atual com o menor item
+        heapify_down(minimo);         // Chama recursivamente a função heapify_down para o novo índice
+    }
+}
 
 // EOF

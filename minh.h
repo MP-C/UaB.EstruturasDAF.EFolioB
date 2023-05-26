@@ -47,10 +47,7 @@ public:
 
     // Funções auxiliares
     void inverte(int&, int&);                  // 10. Troca a ordem
-    // TODO ?!?!?
-    //void heapify_down(int i);
-    //void swap(int& a, int& b);
-
+    void heapify_down(int);                    // 11. Para reorganizar o heap após ação de outra função
 };
 #endif
 // EOF

@@ -21,11 +21,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/compile.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test10.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test11.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test12.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test4.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test8.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/in/test9.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test1.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test10.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test11.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test12.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test2.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test3.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test4.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test5.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test6.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test7.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test8.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/outhyp/test9.outhyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/run_tests.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minh.h" beforeDir="false" afterPath="$PROJECT_DIR$/minh.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +121,7 @@
       <workItem from="1684946515595" duration="895000" />
       <workItem from="1684997873521" duration="5510000" />
       <workItem from="1685049600008" duration="7930000" />
-      <workItem from="1685093352916" duration="313000" />
+      <workItem from="1685093352916" duration="3547000" />
     </task>
     <task id="LOCAL-00001" summary="git init EFolioB">
       <created>1684937057830</created>
@@ -145,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685057744374</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="algumas funções principais OK&#10;Falta testes e verificações">
+      <created>1685093865818</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685093865818</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

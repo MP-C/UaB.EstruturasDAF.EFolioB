@@ -1,0 +1,8 @@
+# test 06 (itens repetidos)
+
+insert   8 7 6  5 4 3  2
+print
+insert 2 5
+print
+insert 2
+print
