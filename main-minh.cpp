@@ -43,7 +43,7 @@ int main() {
         }
         else if (comando == "insert") {                 // Insere no início da lista um novo nó
             while(ssInput >> argumentos) {              // Extrai os argumentoss do input
-                if (minHeap.quantidadeMax()) {          // Verifica se o heap está cheio
+                if (minHeap.filtroArgumento()) {          // Verifica se o heap está cheio
                     cout << "Comando " << comando << ": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
                     break;                              // Auxilio para quebrar o ciclo e impedir repetições
                 }
@@ -71,18 +71,18 @@ int main() {
         }
         else if (comando == "heapify_up") {             // Converte o vetor definido pelos itens "item..." num min Heap
             while(ssInput >> argumentos) {              // Extrai os argumentoss do input
-                if (minHeap.quantidadeMax()) {          // Verifica se o heap está cheio
+                if (minHeap.filtroArgumento()) {          // Verifica se o heap está cheio
                     cout << "Comando " << comando << ": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
                     break;                              // Auxilio para quebrar o ciclo e impedir repetições
                 }
                 minHeap.heapify_up(comando, argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
             }
         }
-        else if (comando == "redim_max") {                  // Redimensiona o número máximo de itens ou capacidade do heap
-            ssInput >> argumentos;                          // Extrai os argumentos do input, mas só um
-            if (minHeap.quantidadeMax()) {          // Verifica se o heap está cheio
-                //cout << "Comando " << comando << ": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
-                break;                              // Auxilio para quebrar o ciclo e impedir repetições
+        else if (comando == "redim_max") {              // Redimensiona o número máximo de itens ou capacidade do heap
+            ssInput >> argumentos;                      // Extrai os argumentos do input, mas só um
+            if (minHeap.filtroArgumento()) {              // Verifica se o heap está cheio
+             /* Exibe uma mensagem de erro se o heap estiver cheio*/
+                break;                                  // Auxilio para quebrar o ciclo e impedir repetições
             }
             minHeap.redimensao_max(comando, argumentos);// Caso existam argumentoss, faz os ciclos para executar o comando tantas vezes quanto necessario
         }

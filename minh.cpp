@@ -51,7 +51,7 @@ void IMINH::imprime_min(string comand) {
 /* Implementação da função para imprimir todos os elementos do heap (3. print) */
 void IMINH::imprime(string comand) {
     if (n == 0) {                               // Verifica se o heap está vazio
-        cout << "Comando " << comand << ": Heap vazio!\n";    // Exibe uma mensagem de erro se o heap estiver vazio
+        cout << "Comando " << comand << ": Heap vazio!\n";// Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
     cout << "Heap=\n";                          // Imprime a mensagem indicando o início da impressão do heap
@@ -60,9 +60,14 @@ void IMINH::imprime(string comand) {
     while (i < n) {                             // Loop para percorrer os elementos do heap
         int elementos_nivel = min(n - i, nivel_n); // Número de elementos no nível atual
         for (int j = 0; j < elementos_nivel; j++) { // Loop para imprimir os elementos de cada nível
-            cout << v[i++] <<" ";               // Imprime o elemento atual e incrementa o índice
+            cout << v[i++];                     // Imprime o elemento atual e incrementa o índice
+            if (j != elementos_nivel - 1) {     // Condição para imprimir corretamente o espaço de cada elemento
+                cout << " ";
+            }
+            if(j == elementos_nivel - 1){
+                cout <<endl;                    // Salta para a próxima linha após imprimir os elementos de um nível
+            }
         }
-    cout << "\n";                               // Salta para a próxima linha após imprimir os elementos de um nível
     nivel_n *= 2;                               // Dobra o número de elementos no próximo nível
     }
 }
@@ -70,10 +75,10 @@ void IMINH::imprime(string comand) {
 /* Implementação da função para obter a dimensão atual do heap (4. dim) */
 void IMINH::dimensao(string comand) {
     /* Zona excluida dado que não passa nos testes, mas responde ao que é pedido no enunciado. E portanto, fica comentado */
-     // if (n == 0) {
-     //   cout << "Comando " << comand << ": Heap vazio!\n";
-     //   return;
-    //}
+    /**if (n == 0) {
+       cout << "Comando " << comand << ": Heap vazio!\n";
+       return;
+    }**/
     cout << "Heap tem "<< n <<" itens\n";   // Exibe a quantidade de itens no heap
 }
 
@@ -84,13 +89,13 @@ void IMINH::dimensao_max(string comand) {
 
 /* Implementação da função para limpar o heap (6. clear) */
 void IMINH::apaga(string comand) {
-    if (n == 0) {                            // Verifica se o heap está vazio
+    if (n == 0) {                  // Verifica se o heap está vazio
         cout << "Comando " << comand << ": Heap vazio!\n";
         return;
     }
-    n = 0;                                  // Define a dimensão do heap como zero, ou seja, remove todos os elementos
-    delete[] v;                             // Libera a memória alocada para o vetor do heap atual
-    v = new int[nv];                        // Aloca uma nova memória para o vetor do heap com a capacidade original
+    n = 0;                         // Define a dimensão do heap como zero, ou seja, remove todos os elementos
+    delete[] v;                    // Libera a memória alocada para o vetor do heap atual
+    v = new int[nv];               // Aloca uma nova memória para o vetor do heap com a capacidade original
 }
 
 /* Implementação da função para remover o menor item do heap (7. delete) */
@@ -109,32 +114,16 @@ void IMINH::heapify_up(string comand, int n) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
-    int i = n - 1;  // Inicia com o último nível não folha do heap
-    while (i > 0) {  // Para cada nó nesse nível
-        int pai = (i - 1) / 2;  // Índice do pai do nó atual
-        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
-            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
-            i = pai;  // Atualiza o índice para o pai
+    int i = n - 1;                 // Inicia com o último nível não folha do heap
+    while (i > 0) {                // Para cada nó nesse nível
+        int pai = (i - 1) / 2;     // Índice do pai do nó atual
+        if (v[i] < v[pai]) {       // Verifica se o nó atual é menor que o pai
+            inverte(v[i], v[pai]);// Troca o nó atual com o pai
+            i = pai;               // Atualiza o índice para o pai
         } else {
-            break;  // Se o nó atual não for menor que o pai, encerra o loop
+            break;                 // Se o nó atual não for menor que o pai, encerra o loop
         }
     }
-    /*
-     * if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
-        return;
-    }
-    int i = n - 1;  // Inicia com o último nível não folha do heap
-    while (i > 0) {  // Para cada nó nesse nível
-        int pai = (i - 1) / 2;  // Índice do pai do nó atual
-        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
-            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
-            i = pai;  // Atualiza o índice para o pai
-        } else {
-            break;  // Se o nó atual não for menor que o pai, encerra o loop
-        }
-    }
-     * */
 }
 
 /* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
@@ -149,8 +138,8 @@ void IMINH::redimensao_max(string comand, int novo_nv) {
     n = min(n, nv);                // Atualiza a dimensão do heap para o menor valor entre a dimensão atual e a capacidade máxima
 }
 
-/* Implementação de função que devolve resposta true ou false em função da quantidade equivalente ente nós preenchidos e tamanho da árvore  */
-bool IMINH::quantidadeMax(){
+/* Implementação de função que devolve resposta true ou false em função da quantidade equivalente ente nós preenchidos e tamanho da árvore (AUXILIAR: 10. filtroArgumento) */
+bool IMINH::filtroArgumento(){
     if (n==nv){                   // Caso a quantidade corresponda ao numero de nós
         return true;              // Devolve true, e assim, será bloquada a proxima introdução
     } else{                       // Caso contrario
@@ -158,30 +147,28 @@ bool IMINH::quantidadeMax(){
     }
 }
 
-/* Implementação de função que inverte a ordem (AUXILIAR: 10. inverte) */
+/* Implementação de função que inverte a ordem (AUXILIAR: 11. inverte) */
 void IMINH::inverte(int& item1, int& item2) {
     int itemAuxiliar = item1;    // Armazena o valor do item1 numa variável auxiliar
     item1 = item2;               // Atribui o valor do item2 ao item1
     item2 = itemAuxiliar;        // Atribui o valor armazenado na variável auxiliar ao item2
 }
 
-/* Função auxiliar para reorganizar o heap após a remoção do menor item (AUXILIAR: 11. heapify_down) */
+/* Função auxiliar para reorganizar o heap após a remoção do menor item (AUXILIAR: 12. heapify_down) */
 void IMINH::heapify_down(int item) {
-    int minimo = item;                 // Índice do item atual
+    int minimo = item;                   // Índice do item atual
     int filhoEsquerda = (2 * item) + 1;  // Índice do filho esquerdo, impar
     int filhoDireita = (2 * item) + 2;   // Índice do filho direito, par
 
-    // Verifica se o filho esquerdo é menor que o item atual
+    /* Verifica se o filho esquerdo é menor que o item atual */
     if (filhoEsquerda < n && v[filhoEsquerda] < v[minimo]) {
         minimo = filhoEsquerda;
     }
-
-    // Verifica se o filho direito é menor que o item atual
+    /* Verifica se o filho direito é menor que o item atual */
     if (filhoDireita < n && v[filhoDireita] < v[minimo]) {
         minimo = filhoDireita;
     }
-
-    // Se o menor item não for o item atual, troca-os e chama recursivamente a função heapify_down
+    /* Se o menor item não for o item atual, troca-os e chama recursivamente a função heapify_down */
     if (minimo != item) {
         inverte(v[item], v[minimo]); // Troca o item atual com o menor item
         heapify_down(minimo);         // Chama recursivamente a função heapify_down para o novo índice

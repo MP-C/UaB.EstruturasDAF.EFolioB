@@ -30,5 +30,7 @@ done
 
 rm ../*.o 2> /dev/null
 
+echo "*************************************"
 echo "SCORE: " ${passed}/${total}
+echo "*************************************"
 read -n 1 -s -r -p "Pressione qualquer tecla para sair..."
