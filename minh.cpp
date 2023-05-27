@@ -109,12 +109,32 @@ void IMINH::heapify_up(string comand, int n) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
-
-    int i = n + 1;
-    while (i > 0 && v[i] < v[(i - 1) / 2]) { // Realiza o ajuste ascendente (heapify up)
-        inverte(v[i], v[(i - 1) / 2]); // Troca o item atual com o pai
-        i = (i - 1) / 2; // Atualiza o índice para o pai
+    int i = n - 1;  // Inicia com o último nível não folha do heap
+    while (i > 0) {  // Para cada nó nesse nível
+        int pai = (i - 1) / 2;  // Índice do pai do nó atual
+        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
+            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
+            i = pai;  // Atualiza o índice para o pai
+        } else {
+            break;  // Se o nó atual não for menor que o pai, encerra o loop
+        }
     }
+    /*
+     * if (n == 0) {
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
+        return;
+    }
+    int i = n - 1;  // Inicia com o último nível não folha do heap
+    while (i > 0) {  // Para cada nó nesse nível
+        int pai = (i - 1) / 2;  // Índice do pai do nó atual
+        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
+            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
+            i = pai;  // Atualiza o índice para o pai
+        } else {
+            break;  // Se o nó atual não for menor que o pai, encerra o loop
+        }
+    }
+     * */
 }
 
 /* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
@@ -131,10 +151,10 @@ void IMINH::redimensao_max(string comand, int novo_nv) {
 
 /* Implementação de função que devolve resposta true ou false em função da quantidade equivalente ente nós preenchidos e tamanho da árvore  */
 bool IMINH::quantidadeMax(){
-    if (n==nv){
-        return true;
-    } else{
-        return false;
+    if (n==nv){                   // Caso a quantidade corresponda ao numero de nós
+        return true;              // Devolve true, e assim, será bloquada a proxima introdução
+    } else{                       // Caso contrario
+        return false;             // Devolve false, e a leitura continua
     }
 }
 
