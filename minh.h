@@ -42,13 +42,13 @@ public:
     void dimensao_max(string);                 // 5. Retorna mensagem com a capacidade máxima do heap (número máximo de nós que ele pode armazenar)
     void apaga(string);                        // 6. Remove todos os nós do heap
     void remove(string);                       // 7. Remove o nó mínimo (raiz) do heap
-    void heapify_up(string, int);                   // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
+    void heapify_up(string, int);              // 8. Reorganiza o heap após uma inserção para garantir que a propriedade do heap seja mantida
     void redimensao_max(string, int );         // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
 
     //Funcoes auxiliares
-    bool quantidadeMax();
-    void inverte(int&, int&);                  // 10. Troca a ordem
-    void heapify_down(int);                    // 11. Para reorganizar o heap após ação de outra função
+    bool filtroArgumento();                    // 10. Critério de validação para parar a leitura de argumentos quando erros
+    void inverte(int&, int&);                  // 11. Troca a ordem
+    void heapify_down(int);                    // 12. Para reorganizar o heap após ação de outra função
 };
 #endif
 // EOF
