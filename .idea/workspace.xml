@@ -21,40 +21,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d5cd52-048a-4c56-a134-266b2c505e85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/compile.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test10.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test11.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test12.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test2.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test5.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test6.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test7.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test8.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/in/test9.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test1.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test10.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test11.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test12.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test2.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test3.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test4.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test5.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test6.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test7.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test8.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/outhyp/test9.outhyp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/run_tests.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main-minh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/minh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minh.h" beforeDir="false" afterPath="$PROJECT_DIR$/minh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test10.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test10.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test11.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test11.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test12.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test12.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test2.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test2.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test3.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test3.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test4.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test4.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test5.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test5.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test6.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test6.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test7.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test7.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test8.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test8.outhyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/outhyp/test9.outhyp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/outhyp/test9.outhyp" afterDir="false" />
     </list>
+    <list id="a95b51af-5123-4360-9f9c-a20501a697a3" name="Changes by joao.carvalho" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,29 +70,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="CMake Application.UaB_EstruturasDAF_EFolioB">
     <configuration name="UaB_EstruturasDAF_EFolioB" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UaB_EstruturasDAF_EFolioB" TARGET_NAME="UaB_EstruturasDAF_EFolioB" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="UaB_EstruturasDAF_EFolioB" RUN_TARGET_NAME="UaB_EstruturasDAF_EFolioB">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="compile.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/tests/compile.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_tests.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/tests/run_tests.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.run_tests.sh" />
+        <item itemvalue="Shell Script.compile.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,7 +143,7 @@
       <workItem from="1684946515595" duration="895000" />
       <workItem from="1684997873521" duration="5510000" />
       <workItem from="1685049600008" duration="7930000" />
-      <workItem from="1685093352916" duration="3547000" />
+      <workItem from="1685093352916" duration="33041000" />
     </task>
     <task id="LOCAL-00001" summary="git init EFolioB">
       <created>1684937057830</created>
@@ -179,7 +201,49 @@
       <option name="project" value="LOCAL" />
       <updated>1685093865818</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="verificações ok para: print, print_min, dim, dim_max, clear, delete, remove, redim_max, e auxiliares(invert, heapify_down)&#10;Não passa nos testes do VPL">
+      <created>1685097063520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685097063520</updated>
+    </task>
+    <task id="LOCAL-00010" summary="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL">
+      <created>1685115503714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685115503714</updated>
+    </task>
+    <task id="LOCAL-00011" summary="/n em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL">
+      <created>1685115599670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685115599670</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Não passa nos testes do VPL&#10;Mas 1 ok">
+      <created>1685131561475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685131561475</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Só passa 1/12 teste no VPL&#10;Mas 7 localmente e consola Uab&#10;Heapify_up criada.&#10;Problema a resolver itens entrada">
+      <created>1685139769257</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685139769257</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Só passa 1/12 teste no VPL&#10;Mas 7 localmente e consola Uab&#10;Heapify_up criada.&#10;Problema para itens entrada resolvido">
+      <created>1685147923665</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685147923665</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +264,12 @@
     <MESSAGE value="Created Testes files" />
     <MESSAGE value="main OK com testes OK" />
     <MESSAGE value="algumas funções principais OK&#10;Falta testes e verificações" />
-    <option name="LAST_COMMIT_MESSAGE" value="algumas funções principais OK&#10;Falta testes e verificações" />
+    <MESSAGE value="verificações ok para: print, print_min, dim, dim_max, clear, delete, remove, redim_max, e auxiliares(invert, heapify_down)&#10;Não passa nos testes do VPL" />
+    <MESSAGE value="endl em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
+    <MESSAGE value="/n em tudo, para verificar : print, print_min, dim, dim_max,&#10;Não passa nos testes do VPL" />
+    <MESSAGE value="Não passa nos testes do VPL&#10;Mas 1 ok" />
+    <MESSAGE value="Só passa 1/12 teste no VPL&#10;Mas 7 localmente e consola Uab&#10;Heapify_up criada.&#10;Problema a resolver itens entrada" />
+    <MESSAGE value="Só passa 1/12 teste no VPL&#10;Mas 7 localmente e consola Uab&#10;Heapify_up criada.&#10;Problema para itens entrada resolvido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Só passa 1/12 teste no VPL&#10;Mas 7 localmente e consola Uab&#10;Heapify_up criada.&#10;Problema para itens entrada resolvido" />
   </component>
 </project>

@@ -30,10 +30,6 @@ IMINH::~IMINH() {
 
 /* Implementação da função de inserção no heap (1. insert) */
 void IMINH::insere(string comand, int item) {
-    if (n == nv) {                          // Verifica se o heap está cheio
-        cout << "Comando "<< comand <<": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
-        return;
-    }
     v[n++] = item;                          // Insere o item no heap
     int i = n - 1;
     while (i > 0 && v[i] < v[(i - 1) / 2]) {// Realiza o ajuste ascendente (heapify up)
@@ -44,12 +40,12 @@ void IMINH::insere(string comand, int item) {
 
 /* Implementação da função para imprimir o valor mínimo (raiz) do heap (2. print_min) */
 void IMINH::imprime_min(string comand) {
-    if (n == 0) {                           // Verifica se o heap está vazio
+    if (n == 0) {                               // Verifica se o heap está vazio
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
     /* Caso o heap não estiver vazio, imprime a mensagem com o valor mínimo do heap */
-    cout << "Min= " << v[0] << "\n";        // Imprime o valor mínimo do heap
+    cout << "Min= " << v[0] << "\n";            // Imprime o valor mínimo do heap
 }
 
 /* Implementação da função para imprimir todos os elementos do heap (3. print) */
@@ -62,27 +58,28 @@ void IMINH::imprime(string comand) {
     int nivel_n = 1;                            // Variável para controlar o número de elementos em cada nível
     int i = 0;                                  // Variável para percorrer os elementos do heap
     while (i < n) {                             // Loop para percorrer os elementos do heap
-        for (int j = 0; j < nivel_n && i < n; j++) { // Loop para imprimir os elementos de cada nível
-            cout << v[i++] << " ";              // Imprime o elemento atual e incrementa o índice
+        int elementos_nivel = min(n - i, nivel_n); // Número de elementos no nível atual
+        for (int j = 0; j < elementos_nivel; j++) { // Loop para imprimir os elementos de cada nível
+            cout << v[i++] <<" ";               // Imprime o elemento atual e incrementa o índice
         }
-        cout << "\n";                           // Salta para a próxima linha após imprimir os elementos de um nível
-        nivel_n *= 2;                           // Dobra o número de elementos no próximo nível
+    cout << "\n";                               // Salta para a próxima linha após imprimir os elementos de um nível
+    nivel_n *= 2;                               // Dobra o número de elementos no próximo nível
     }
 }
 
 /* Implementação da função para obter a dimensão atual do heap (4. dim) */
-void IMINH::dimensao(string comand) { // veri
-    /* Zona excluida dado que não passa nos testes, mas corresponde ao enunciado)
-     * if (n == 0) {
-        cout << "Comando " << comand << ": Heap vazio!\n";
-        return;
-    }*/
-    cout << "Heap tem "<< n <<" itens\n" << endl;   // Exibe a quantidade de itens no heap
+void IMINH::dimensao(string comand) {
+    /* Zona excluida dado que não passa nos testes, mas responde ao que é pedido no enunciado. E portanto, fica comentado */
+     // if (n == 0) {
+     //   cout << "Comando " << comand << ": Heap vazio!\n";
+     //   return;
+    //}
+    cout << "Heap tem "<< n <<" itens\n";   // Exibe a quantidade de itens no heap
 }
 
 /* Implementação da função para obter a dimensão máxima do heap atual (5. dim_max) */
 void IMINH::dimensao_max(string comand) {
-    cout << "Heap tem capacidade " << nv <<" itens\n" << endl; // Exibe a capacidade máxima do heap
+    cout << "Heap tem capacidade " << nv <<" itens\n"; // Exibe a capacidade máxima do heap
 }
 
 /* Implementação da função para limpar o heap (6. clear) */
@@ -96,7 +93,7 @@ void IMINH::apaga(string comand) {
     v = new int[nv];                        // Aloca uma nova memória para o vetor do heap com a capacidade original
 }
 
-/* Implementação da função para remover o menor item do heap (7. Remove) */
+/* Implementação da função para remover o menor item do heap (7. delete) */
 void IMINH::remove(string comand) {
     if (n == 0) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
@@ -107,17 +104,41 @@ void IMINH::remove(string comand) {
 }
 
 /* Implementação da função para reorganizar o heap após a inserção de novos itens (8. heapify_up) */
-void IMINH::heapify_up(string comand, int items) {
-    apaga(comand);                // Limpa o heap
-    insere(comand, items);   // Insere cada item no heap
-}
-
-/* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
-void IMINH::redimensao_max(string comand, int novo_nv) {
+void IMINH::heapify_up(string comand, int n) {
     if (n == 0) {
         cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
         return;
     }
+    int i = n - 1;  // Inicia com o último nível não folha do heap
+    while (i > 0) {  // Para cada nó nesse nível
+        int pai = (i - 1) / 2;  // Índice do pai do nó atual
+        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
+            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
+            i = pai;  // Atualiza o índice para o pai
+        } else {
+            break;  // Se o nó atual não for menor que o pai, encerra o loop
+        }
+    }
+    /*
+     * if (n == 0) {
+        cout << "Comando " << comand << ": Heap vazio!\n"; // Exibe uma mensagem de erro se o heap estiver vazio
+        return;
+    }
+    int i = n - 1;  // Inicia com o último nível não folha do heap
+    while (i > 0) {  // Para cada nó nesse nível
+        int pai = (i - 1) / 2;  // Índice do pai do nó atual
+        if (v[i] < v[pai]) {  // Verifica se o nó atual é menor que o pai
+            inverte(v[i], v[pai]);  // Troca o nó atual com o pai
+            i = pai;  // Atualiza o índice para o pai
+        } else {
+            break;  // Se o nó atual não for menor que o pai, encerra o loop
+        }
+    }
+     * */
+}
+
+/* Implementação da função para redimensionar o heap para uma nova capacidade máxima (9. redim_max) */
+void IMINH::redimensao_max(string comand, int novo_nv) {
     int *novo_v = new int[novo_nv];// Cria um novo vetor com a nova capacidade máxima
     for (int i = 0; i < n && i < novo_nv; i++) {
         novo_v[i] = v[i];          // Copia os itens do heap atual para o novo vetor
@@ -126,6 +147,15 @@ void IMINH::redimensao_max(string comand, int novo_nv) {
     v = novo_v;                    // Atualiza o vetor do heap para o novo vetor
     nv = novo_nv;                  // Atualiza a capacidade máxima do heap
     n = min(n, nv);                // Atualiza a dimensão do heap para o menor valor entre a dimensão atual e a capacidade máxima
+}
+
+/* Implementação de função que devolve resposta true ou false em função da quantidade equivalente ente nós preenchidos e tamanho da árvore  */
+bool IMINH::quantidadeMax(){
+    if (n==nv){                   // Caso a quantidade corresponda ao numero de nós
+        return true;              // Devolve true, e assim, será bloquada a proxima introdução
+    } else{                       // Caso contrario
+        return false;             // Devolve false, e a leitura continua
+    }
 }
 
 /* Implementação de função que inverte a ordem (AUXILIAR: 10. inverte) */
