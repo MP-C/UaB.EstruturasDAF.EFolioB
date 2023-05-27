@@ -23,14 +23,24 @@
 #include <sstream>
 #include <string>
 #include "minh.h"
+
 using namespace std;
 
-/* Se o comando introduzido for um comentario (#) ou estiver vazio ignora-se a linha
-string validarComando(string input){  // Verifica se o comando é valido
-    if(comando[0] == '#' || comando.length()==0 ){                      // Critério para garantir que existe um comando válido para ser introduzido
-        return "Introduza um comando valido"; // Devolve uma mensagem de erro
-    }else{
-        return input;                       // Devolve o input, e continua a executar
+/*void validarItems(string cmd, stringstream ssArgumentos){
+    int item;
+    int itens[500];           // Array para armazenar os itens a serem inseridos
+    int itens_contador = 0;   // Número atual de itens
+
+    // Lê os itens da linha de entrada e os armazena no array
+    while (ssArgumentos >> item) {
+        if (itens_contador < 500) {
+            itens[itens_contador++] = item; // Armazena o item no array e incrementa o contador
+        } else {
+            cout << "Comando " << cmd<< ": Heap cheio!" << endl; // Exibe uma mensagem de erro se o heap estiver cheio
+            break; // Sai do loop
+        }
+        if (ssArgumentos.peek() == ' ')
+            ssArgumentos.ignore(); // Ignora o espaço em branco após o número
     }
 }*/
 
@@ -42,9 +52,8 @@ int main() {
     while (getline(cin, input)) {
         stringstream ssInput(input); // Extrai a linha completa e guarda em ssInput
 
-        //string comandoValido = validarComando(input);   // Verifica se o comando é valido (diferente de vazio e de #)
+        //string comandoValido = validarComando(input); // Verifica se o comando é valido (diferente de vazio e de #)
         ssInput >> comando;                             // Extrai o nome do comando
-
 
         /* Verifica que o comando introduzido é válido*/
         if (comando[0] == '#' || comando.length()==0 ) {// Se o comando introduzido for um comentario (#) ou estiver vazio ignora-se a linha completamente
@@ -52,8 +61,12 @@ int main() {
         }
         else if (comando == "insert") {                 // Insere no início da lista um novo nó
             while(ssInput >> argumentos) {              // Extrai os argumentoss do input
+                if (minHeap.quantidadeMax()) {          // Verifica se o heap está cheio
+                    cout << "Comando " << comando << ": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
+                    break;                              // Auxilio para quebrar o ciclo e impedir repetições
+                }
             /* Insere itens no heap pela ordem apresentada */
-                minHeap.insere(comando, argumentos);    // Caso existam argumentos, faz os ciclos para executar o comando tantas vezes quanto necessario
+            minHeap.insere(comando, argumentos);       // Caso existam argumentos, faz os ciclos para executar o comando tantas vezes quanto necessario
             }
         }
         else if (comando == "print_min") {              // Imprime o menor item no heap

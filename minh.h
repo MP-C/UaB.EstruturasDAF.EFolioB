@@ -46,6 +46,7 @@ public:
     void redimensao_max(string, int );         // 9. Redimensiona a capacidade máxima do heap para um novo valor especificado
 
     //Funcoes auxiliares
+    bool quantidadeMax();
     void inverte(int&, int&);                  // 10. Troca a ordem
     void heapify_down(int);                    // 11. Para reorganizar o heap após ação de outra função
 };

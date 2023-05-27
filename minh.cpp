@@ -30,10 +30,6 @@ IMINH::~IMINH() {
 
 /* Implementação da função de inserção no heap (1. insert) */
 void IMINH::insere(string comand, int item) {
-    if (n == nv) {                          // Verifica se o heap está cheio
-        cout << "Comando "<< comand <<": Heap cheio!\n"; // Exibe uma mensagem de erro se o heap estiver cheio
-        return ;
-    }
     v[n++] = item;                          // Insere o item no heap
     int i = n - 1;
     while (i > 0 && v[i] < v[(i - 1) / 2]) {// Realiza o ajuste ascendente (heapify up)
@@ -131,6 +127,15 @@ void IMINH::redimensao_max(string comand, int novo_nv) {
     v = novo_v;                    // Atualiza o vetor do heap para o novo vetor
     nv = novo_nv;                  // Atualiza a capacidade máxima do heap
     n = min(n, nv);                // Atualiza a dimensão do heap para o menor valor entre a dimensão atual e a capacidade máxima
+}
+
+/* Implementação de função que devolve resposta true ou false em função da quantidade equivalente ente nós preenchidos e tamanho da árvore  */
+bool IMINH::quantidadeMax(){
+    if (n==nv){
+        return true;
+    } else{
+        return false;
+    }
 }
 
 /* Implementação de função que inverte a ordem (AUXILIAR: 10. inverte) */
